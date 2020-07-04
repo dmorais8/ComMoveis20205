@@ -30,7 +30,7 @@ Preparacao do ambiente
 comandos(windows):
 cd projeto01
 python -m venv venv
-venv/Scripts/activate.bat
+venv\Scripts\activate.bat
 pip install -r requirements.txt
 
 comandos(linux):
