@@ -484,7 +484,7 @@ class Functions:
                 singlePldB = okumura_hata(
                     dfc, self.dHBs, mtDistEachBs[iBsD], self.dAhm)
             else:
-                singlePldB = cost231(
+                singlePldB = cost_231(
                     dfc, self.dHBs, mtDistEachBs[iBsD], self.dAhm)
 
             mtPldB.append(singlePldB)
@@ -526,15 +526,15 @@ class Functions:
         plt.pcolor(mtPosx, mtPosy, dict_out_rate['outage_matrix'])
         Functions.draw_deploy(self.dR, vtbs)
         plt.axis('equal')
-        plt.title('REM sem microcelulas')
+        plt.title(f'REM sem microcelulas {dfc} MHz')
 
         plt.figure()
         plt.pcolor(mtPosx, mtPosy, dict_out_rate_with_mcll['outage_matrix'])
         Functions.draw_deploy(self.dR, vtbs)
         Functions.draw_deploy(self.drMicro, vtbs_micro)
         plt.axis('equal')
-        plt.title('REM com microcelulas')
-        plt.show()
+        plt.title(f'REM com microcelulas {dfc} MHz')
+        # plt.show()
 
     @staticmethod
     def two_colors_mt(mtpowerfinaldbm, sensitivy):
@@ -621,5 +621,7 @@ if __name__ == '__main__':
     for dFc in carriers:
 
         operation.rem_microcell_outage(1, -90, dFc)
+
+    plt.show()
 
     system.exit(0)
