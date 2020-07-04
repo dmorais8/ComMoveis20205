@@ -224,6 +224,7 @@ class MeasurePoints(object):
         plt.title('Todas as 7 ERBs')
         plt.show()
 
+
 if __name__ == "__main__":
 
     print("----------Menu----------")
@@ -250,7 +251,9 @@ if __name__ == "__main__":
         vtFc = [800, 900, 1800, 1900, 2100]
 
         dRrange = np.arange(1000, 12000, 10).tolist()
+
         dRrange.reverse()
+
         dRrange = np.array(dRrange, dtype=int)
 
         print("Choose a model: 1 - Okumura Hata, 2 - Cost Hata (Cost 231), Any key - Fechar o programa")
