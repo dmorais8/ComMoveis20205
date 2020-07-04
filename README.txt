@@ -2,6 +2,21 @@ SOBRE
 
 Codigos do Projeto 01 da disciplina de Comunicacoes Moveis no semestre 2020.5
 
+Estrutura do Projeto
+
+projeto01/
+├── Entrega_01_02
+│   ├── main.py
+│   └── README.txt
+├── Entrega_03
+│   ├── main.py
+│   └── README.txt
+├── Entrega_04
+│   ├── main.py
+│   └── README.txt
+├── README.txt
+└── requirements.txt
+
 Requisitos:
 
     - Windows
