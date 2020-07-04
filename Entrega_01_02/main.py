@@ -229,7 +229,7 @@ if __name__ == "__main__":
 
     print("----------Menu----------")
     print("Select an action: ")
-    print("1 - calculate outage rate by carrier frequency")
+    print("1 - calculate outage rate by carrier frequency(Entrega 01 e 02)")
     print("2 - draw measurement points")
     option = int(input("Option: "))
 
@@ -237,6 +237,7 @@ if __name__ == "__main__":
 
         print("Choose a correct option")
         print("Terminating")
+
         system.exit(1)
 
     elif option == 1:
@@ -264,6 +265,9 @@ if __name__ == "__main__":
         if model in [1, 2]:
 
             outage.outageCalc()
+
+        system.exit(0)
+
     else:
         dR = 5E3
         dOffset = np.pi / 6
@@ -275,5 +279,7 @@ if __name__ == "__main__":
 
         draw = MeasurePoints(dR, dOffset, dFc, dHBs, dHMob, dPtdBm)
         draw.fdrawMeasurementPoints()
+
+        system.exit(0)
 
 
