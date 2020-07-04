@@ -22,7 +22,7 @@ comandos(linux):
 cd projeto01
 sudo apt-get install python3-venv
 python3 -m venv venv
-venv/Scripts/activate.bat
+source venv/bin/activate
 pip install -r requirements.txt
 
 ACESSANDO CADA ENTREGA
