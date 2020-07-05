@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 comandos(linux):
 cd projeto01
-sudo apt-get install python3-venv
+sudo apt-get install python3-venv python3-tk
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
