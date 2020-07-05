@@ -592,7 +592,6 @@ class Functions:
         print(f'Area com outage: {percentile_ones:.2f}%')
 
 
-
 if __name__ == '__main__':
 
     dR = 500
